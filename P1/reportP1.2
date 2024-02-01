@@ -1,0 +1,14 @@
+1) A general outline of your understanding of the assigned work.
+
+In this project we were asked to complete RR (round robin) and three feedback-queue preemptive scheduling. Round Robin schedualing is almost same as FCFS scheduling , it is preemptive version of FCFS scheduling algorithm. In RR scheduing algorithm, CPU needs to shift to next process after fixed interval time, whuich is quantum time, preempted process added to end of queue, quantum time should be minimum.
+To implement this process first we store all processes in to temporary queue, where it gets sorted in first come first serve order.Then first process transfers to ready to go queue where it executes until quantum time, state is recorded and process goes to waiting queue,  and second process goes to ready queueand it repeates until the all the processes are finished. This was first task to implemet in C language.
+second task was three feedback-queue preemptive scheduling, this scheduling is much more efficient than otheer scheduling as we can move between the queues. In this scheduling we had to implement three queues q0 and q1 Round Robin where quantum time 8 and 20 milliseconds and q2 as FCFS.
+In this scheduling, first their process cant executed in lower queue if there is any process in higher queue, so processes goes from higher queue to lower queue. 
+second whenever new process is entered it goes in first queue (RR) where quantum time is 8 seconds so it executes for 8 seconds if its still not finished it goes to second RR queue with 20 seconds, where process executes for another 20 seconds and if its still not finished it goes to FCFS queue.
+These were tasks of assigned work.
+2) A clear statement about the assigned work/components you believe you have
+done/completed successfully.
+I have completed all tasks successfully, as Round Robin scheduling and Three-level feedback-queue preemptive scheduling working succcessfully. 
+3) A statement about the work you believe you might have not completed successfully
+(feel free to comment on related problems, if any).
+4) Anything else related to your work that you might wish to comment upon.
